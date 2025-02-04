@@ -1272,14 +1272,11 @@ table{
         
     }
 
-    
-    
-    
-    
-
-    
-    
-    
-     
-   
+       
 }
+@media (max-width: 600px){
+    body{
+        width: 200%;
+    }
+}
+
