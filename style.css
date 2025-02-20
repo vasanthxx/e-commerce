@@ -1932,11 +1932,13 @@ table{
     #prodetails .single-pro-details h4 {
         padding-top: 5px;
         padding-bottom: 5px;
-        font-size: 16px;
-        font-weight: 500;
+        font-size: 18px;
+        font-weight: 700;
     }
     #prodetails .single-pro-details span {
         line-height: 1px;
+        font-size: 10px;
+
     }
     #prodetails .single-pro-details option{
         font-size: 10px;
