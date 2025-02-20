@@ -110,11 +110,11 @@ p{
     padding: 7px 0;
 }
 #body button{
-    color: rgb(0, 0, 0);
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #fff;
     background-color: #fff;
-    border-color: rgb(2, 2, 2);
+    border: none;
     border-radius: 1px;
-    border: 1px solid black;
     padding: 3px 0;
     font-size: 15px;
     font-weight: 600;
@@ -124,9 +124,13 @@ p{
     transition: 0.2s;
     
 }
-#body button:hover{
-    color: #222;
-    background-color: rgb(125, 219, 121);
+#body button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #218838, #1e7e34);
+}
+
+#body button:focus::before {
+    opacity: 1;
 }
 #feature .one{
     width: 100px;
@@ -154,7 +158,7 @@ p{
 }
 #feature .box1:hover,.box2:hover,.box3:hover,
 .box4:hover,.box5:hover,.box6:hover{
-    box-shadow: 10px 10px 54px rgba(77, 64, 223, 0.01);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 #feature h6{
     background-color: gold;
@@ -207,8 +211,9 @@ p{
 .product-container3:hover,
 .product-container4:hover,
 .product-container5:hover,
-.product-container6:hover{
-    box-shadow: 5px 5px 80px rgba(77, 64, 223, 0.01);
+.product-container6:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 .star i{
     color: #e8e414;
@@ -257,8 +262,9 @@ p{
 .hello3:hover,
 .hello4:hover,
 .hello5:hover,
-.hello6:hover{
-    box-shadow: 5px 5px 80px rgba(77, 64, 223, 0.01);
+.hello6:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 #design .star2 i{
@@ -307,9 +313,9 @@ p{
 
 }
 #banner button{
-    color: rgb(0, 0, 0);
-    background-color: #fff;
-    border-color: rgb(2, 2, 2);
+    color: #fff;
+    background: linear-gradient(135deg, #28a745, #218838);
+    border: none;
     border-radius: 3px;
     padding: 3px 0;
     font-size: 15px;
@@ -320,9 +326,9 @@ p{
     transition: 0.2s;
     
 }
-#banner .buttonstyle:hover{
-    color: black;
-    background-color: rgb(125, 219, 121);
+#banner .buttonstyle:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #218838, #1e7e34);
 }
 
 #number h3{
@@ -365,9 +371,11 @@ p{
 .newfashion-container3:hover,
 .newfashion-container4:hover,
 .newfashion-container5:hover,
-.newfashion-container6:hover{
-    box-shadow: 5px 5px 80px rgba(77, 64, 223, 0.01);
+.newfashion-container6:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
+
 .star i{
     color: #e8e414;
     
@@ -415,8 +423,9 @@ p{
 .newdesign-container2:hover,
 .newdesign-container3:hover,
 .newdesign-container4:hover,
-.newdesign-container5:hover{
-    box-shadow: 5px 5px 80px rgba(77, 64, 223, 0.01);
+.newdesign-container5:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 .star i{
     color: #e8e414;
@@ -521,15 +530,17 @@ p{
 }
 
 #smallbanner .banner1:hover button{
-    color: black;
-    background-color: rgb(125, 219, 121);
-    border-color: #000000;
+    color: #fff;
+    background: linear-gradient(135deg, #28a745, #218838);
+    border: none;
+    transform: scale(1.05);
 }
 
 #smallbanner .banner2:hover button{
-    color: black;
-    background-color: rgb(125, 219, 121);
-    border-color: #000000;
+    color: #fff;
+    background: linear-gradient(135deg, #28a745, #218838);
+    border: none;
+    transform: scale(1.05);
 }
 
 #banner-box{
@@ -624,9 +635,8 @@ p{
 }
 #newsletter .form button{
     background: linear-gradient(135deg, #28a745, #218838);
-    color: black;
-    white-space: nowrap;
-    border: 1px solid transparent;
+    color: #fff;    white-space: nowrap;
+    border: none; 
     padding: 10px;
 }
 footer{
@@ -1368,6 +1378,16 @@ table{
         text-decoration: none;
         
     }  
+
+
+    /* -------------- new images added  ----------------- */
+    .product-container6,.hello6,
+    .newfashion-container6{
+       display: flex;
+       justify-content: center;
+    }
+    
+   /* ---------------------------------------- */
    
    
 }
@@ -1406,7 +1426,7 @@ table{
         font-size: 14px;
     }
     #body {
-        height: 30vh;
+        height: 35vh;
         padding-top: 10px;
         background-position: top 30% right 30%;
     }
@@ -1440,10 +1460,12 @@ table{
     .product-container5,.product-container6{
         width: 120px;
         height: 200px;
+        padding: 20px;
     }
     .hello1,.hello2,.hello3,.hello4,.hello5,.hello6{
         width: 120px;
         height: 200px;
+        padding: 20px;
     }
     .newdesign-container1,.newdesign-container2,
     .newdesign-container3,.newdesign-container4,
@@ -1928,12 +1950,7 @@ table{
     }
     
    /* ---------------------------------------- */
-#navbar{
-    z-index: 999;
-    position: sticky;
-    
 
-}
 
 
     
