@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body>
+
+    
+
+    <section id="navbar">
+        <a href=""><img src="/image/the boys.png" class="logo"></a>
+        <div>
+            <ul class="navbardesign" id="show">
+                <li><a href="home.html">Home|</a></li>
+                <li><a href="shop.html">Shop|</a></li>
+                <li><a href="blog.html">Blog|</a></li>
+                <li><a href="about.html">About|</a></li>
+                <li><a href="contact.html">contact|</a></li>
+                <li><a class="active" href="cart.html"><i class="bi bi-bag"></i></a></li>
+                <a href="#" class="close" onclick="closemenu()"><i class="bi bi-x-circle-fill"></i></a>
+
+            </ul>
+        </div>
+        <div id="menuicon">
+        
+            <i id="bar" class="bi bi-list" onclick="openmenu()"></i>
+        </div>
+        
+
+        
+
+    </section>
+
+    
+    <section id="shop-header" class="about-header">
+        
+        <h2><b>#KNOW US</b></h2>
+        
+        <p>Designed For Comfort,Designed For Style</p>
+       
+    </section>
+
+    <section id="cart">
+        <table >
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>Subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="bi bi-x-circle"></i></a></td>
+                    <td><img src="/image/shirt1.webp" alt=""></td>
+                    <td>freaky beach shirt</td>
+                    <td>$69</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$69</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="bi bi-x-circle"></i></a></td>
+                    <td><img src="/image/shirt2.jpg" alt=""></td>
+                    <td>freaky beach shirt</td>
+                    <td>$69</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$69</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="bi bi-x-circle"></i></a></td>
+                    <td><img src="/image/shirt3.jpg" alt=""></td>
+                    <td>freaky beach shirt</td>
+                    <td>$69</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$69</td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="bi bi-x-circle"></i></a></td>
+                    <td><img src="/image/shirt4.webp" alt=""></td>
+                    <td>freaky beach shirt</td>
+                    <td>$69</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$69</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add">
+        <div class="Coupon">
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type=" text" placeholder="Enter your Coupon">
+                <button class="normal">Apply</button>
+            </div>
+        </div>
+
+        <div class="Subtotal">
+            <h3>Cart Totals</h3>
+            <table>
+                <tr>
+                    <td>Cart subtotals</td>
+                    <td>$225</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$225</strong></td>
+                </tr>
+            </table>
+            <br>
+            <button class="normal">Proceed to checkout</button>
+        </div>
+    </section>
+
+
+      <footer>
+        <div class="columnfirst">
+            <img src="/image/the boys.png" alt="" class="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>543/6, Gandhi nagar, srirangam, Trichy.</p>
+            <p><strong>Phone:</strong>+91-1234567890</p>
+            <p><strong>Hours</strong>10.00AM - 8PM. MON-SAT</p>
+            <div class="socialmedia">
+                <h4>Follow Us</h4>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-twitter"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+        </div>
+        <div class="column">
+            <h4>About</h4>
+
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="column">
+            <h4>My Account</h4>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="install" >
+            <h4>Install App</h4>
+            <p>From App Store and Google Play</p>
+            <div>
+                <img src="/image/appstore.svg" alt="" >
+                <img src="/image/playstore.png" alt="">
+            </div>
+            <p>Secured Payments Gateways</p>
+            <img src="/image/payments.png" alt="" style="width: 350px;" class="footimg">
+        </div>
+      </footer>
+
+      <section id="copyrights">
+        <p>@2024 vasanthbro-Ecommerce copyrights</p>
+
+      </section>
+
+
+      <script src="script.js" ></script>
+
+
+
+    
+</body>
+</html>
